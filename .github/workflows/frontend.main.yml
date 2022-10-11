@@ -2,9 +2,11 @@ name: deploy_frontend
 # Deploys when push is made from frontend folder
 
 on:
-    push:
-        branches:
-        - 'main'
+  push:
+      branches: [main]
+      paths:
+      - 'frontend/**'
+      
 
 # logs into azure
 jobs:
