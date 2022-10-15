@@ -16,6 +16,7 @@ jobs:
   build-and-deploy:
     runs-on: windows-latest
     steps:
+    # corrected this to @main
     - name: 'Checkout GitHub action'
       uses: actions/checkout@main
 
