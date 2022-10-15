@@ -3,8 +3,9 @@ name: deploy_backend
 # run from backend on the main branch
 on:
   push:
-    branches: [ main ]
-    - 'backend/**'
+      branches: [ main ]
+      paths: 
+      - 'backend/**'
 
 env:
   AZURE_FUNCTIONAPP_NAME: GetResumeCounter  # set this to your application's name
