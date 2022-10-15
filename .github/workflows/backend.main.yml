@@ -16,11 +16,11 @@ jobs:
   build-and-deploy:
     runs-on: windows-latest
     steps:
-      - name: 'Checkout GitHub action'
-      uses: actions/checkout@v2
+    - name: 'Checkout GitHub action'
+      uses: actions/checkout@main
 
-      - name: 'Login via Azure CLI'
-      - uses: azure/login@v1
+    - name: 'Login via Azure CLI'
+      uses: azure/login@v1
       with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
